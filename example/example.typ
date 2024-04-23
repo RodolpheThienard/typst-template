@@ -10,4 +10,5 @@
 
 = Title part
 == 1 slide
+#figure(image(".picture/logo.png", height:  50%))
 == 2 slide
