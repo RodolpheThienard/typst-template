@@ -16,15 +16,15 @@
 ### Render
 <details>
 <summary>Outline</summary>
-<img title="a title" alt="Alt text" src=".picture/outline.png">
+<img title="a title" alt="Alt text" src=".picture/outline.jpg">
 </details>
 <details>
 <summary>Section</summary>
-<img title="a title" alt="Alt text" src=".picture/section.png">
+<img title="a title" alt="Alt text" src=".picture/section.jpg">
 </details>
 <details>
 <summary>Slide</summary>
-<img title="a title" alt="Alt text" src=".picture/slide.png">
+<img title="a title" alt="Alt text" src=".picture/slide.jpg">
 </details>
 
 
