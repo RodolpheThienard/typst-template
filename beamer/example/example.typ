@@ -1,4 +1,4 @@
-#import "template-diapo.typ" : beamer
+#import "../beamer.typ" : beamer
 
 #show: beamer.with(
   title: "Title page",
@@ -10,5 +10,5 @@
 
 = Title part
 == 1 slide
-#figure(image(".picture/logo.png", height:  50%))
+#figure(image("../../.picture/logo.png", height:  50%))
 == 2 slide

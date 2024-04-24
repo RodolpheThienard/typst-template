@@ -1,8 +1,9 @@
-# Beamer in typst
+# Typst template
 
-## Use template
+## Beamer
+### Use template
 ```typ
-#import "template-diapo.typ" : beamer
+#import "beamer.typ" : beamer
 
 #show: beamer.with(
   title: "Title page",
@@ -12,7 +13,7 @@
 )
 ```
 
-## Render
+### Render
 <details>
 <summary>Outline</summary>
 <img title="a title" alt="Alt text" src=".picture/outline.png">
