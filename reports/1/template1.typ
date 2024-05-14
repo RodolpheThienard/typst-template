@@ -10,6 +10,7 @@
   subtitle: none,
   subsubtitle: none,
   authors: (),
+  supervisors: (),
   abstract: [],
   doc,
 ) = {
@@ -20,13 +21,12 @@
 
 grid(
   columns: (1fr, 1fr, 1fr),
-  align(left)[
-    #image("images/arm_logo.png", width: 70%)
+  align(left+horizon)[
+    #image("images/logo.png", width: 100%)
   ],
-  align(center)[],
-  align(right)[
-    #v(0.4cm)
-    #figure( image("images/teratec-logo.jpg", width: 60%))
+  align(center+horizon)[],
+  align(right + horizon)[
+    #image("images/logo.png", width: 100%)
   ]
 )
 
@@ -48,16 +48,19 @@ align(
 
   v(1em)
 
+  grid(columns: (1fr, 1fr),
   align(center, box(align(start, text(16pt)[
-      *Authors:* \
+      *Author :* \
+      #for author in (authors) {
+        [#author.name\ ]
+      }
+    ]))),
+  align(center, box(align(end, text(16pt)[
+      *Supervisors :* \
+      #for supervisor in (supervisors) {
+        [#supervisor.name\ ]
+      }      
     ])))
-      grid(
-    columns: (1fr,) * 2, 
-    row-gutter: 16pt,
-    ..authors.map(author => text(16pt)[
-      #author.name \
-    ]),
-  
 )
 
 if(abstract != none){
@@ -74,4 +77,5 @@ if(abstract != none){
   
   columns(1, doc)
 }
+
 

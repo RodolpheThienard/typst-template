@@ -12,13 +12,16 @@
     ),
     (
       name: "Name 2",
-    ), 
+    ), ),
+    supervisors: (
     (
       name: "Name 3",
     ),
     (
       name: "Name 4",
     ),
+      
+    
   ),
   abstract: [#lorem(100)],
   doc,
